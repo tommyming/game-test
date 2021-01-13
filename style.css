@@ -13,3 +13,8 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#canvas{
+    position: absolute;
+    background: #0000;
+}
