@@ -14,13 +14,28 @@ body{
     background-repeat: no-repeat;
 }
 
-canvas {
+img {
     text-align: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 200px;
 	bottom: 0;
 	left: 0;
     right: 0;
-	margin: auto;
+    width: 100px;
+    height: 100px;
+    align-self: auto;
+    flex: none;
+    padding: 5px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
 }
