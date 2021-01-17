@@ -45,8 +45,8 @@ $(document).ready(function() {
             },2000);
         };
     })
-});
+    window.setTimeout(function() {
+        window.location.href = 'try-again.html';
+    }, 20000);
 
-window.setTimeout(function() {
-    window.location.href = 'try-again.html';
-}, 20000);
+});
