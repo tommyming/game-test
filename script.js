@@ -50,7 +50,7 @@ function init() {
         var t = document.getElementById("tryagain");
         t.style.visibility = "visible";
         timeout = 1;
-    }, 15000); 
+    }, 10000); 
 }
 
 function start(){
