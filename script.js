@@ -1,23 +1,23 @@
 var pos = [
-    [64, 741],
-    [157, 909],
-    [357,799],
-    [633, 857],
-    [928,804],
-    [1246,821],
-    [1566,869],
-    [1803,713]
+    [50, 741],
+    [140, 909],
+    [330,799],
+    [620, 857],
+    [900,804],
+    [1220,821],
+    [1530,869],
+    [1750,713]
 ];
 
 var balpos = [
-    [147,350],
-    [332,478],
-    [564,321],
-    [750,492],
-    [1019,316],
-    [1243,473],
-    [1505,317],
-    [1763,439]
+    [120,330],
+    [310,458],
+    [550,305],
+    [725,477],
+    [1000,306],
+    [1220,460],
+    [1490,307],
+    [1737,425]
 ];
 
 var order = [];
@@ -50,7 +50,7 @@ function init() {
         var t = document.getElementById("tryagain");
         t.style.visibility = "visible";
         timeout = 1;
-    }, 20000); 
+    }, 15000); 
 }
 
 function start(){
@@ -65,8 +65,8 @@ function start(){
         d.style.position = "absolute";
         // d.style.left = pos[i][0]*100/1920 + "%";
         // d.style.top = pos[i][1]*100/1080 + "%";
-        d.style.left = pos[i][0] + "px";
-        d.style.top = pos[i][1] + "px";
+        d.style.left = pos[i][0]+Math.random()*100-50 + "px";
+        d.style.top = pos[i][1]+Math.random()*100-50 + "px";
         d.addEventListener("click", function() {
             if (timeout == 1 || this.done == 1) return;
             this.done = 1;

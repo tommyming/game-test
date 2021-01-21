@@ -4,14 +4,20 @@
         <title>Test</title>
         <!-- CSS only -->
         <link rel = "stylesheet" type = "text/css" href = "style-2.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
+        <script src = "ready.js"></script>
     </head>
-    <body>
-     <div class="wrapper">
-          <a href="game.html">
-              <img src="assets/play-button.png" height="200" width="200" = "home">
-          </a> 
-      </div>
+    <body onload="init()">
+        <div id="parent" width="0" height="0">
+            <div class="bg" width="1920px" height="1080px">
+                <img src="assets/ready-screen.png" width="100%"/>
+                <div class="wrapper">
+                    <a href="game.html">
+                        <img src="assets/play-button.png" height="200" width="200" = "home">
+                    </a> 
+                </div>
+            </div>
+        </div>
     </body>
 
 

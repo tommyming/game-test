@@ -1,18 +1,31 @@
 body{
-    background-image: url(assets/ready-screen.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    justify-content: center;
+}
+#parent{
+    transform-origin: 0 0;
+    /* overflow: visible;
+    max-width: 0;
+    max-height: 0; */
+    justify-content: center;
+}
+.bg{
+    justify-content: center; 
+    min-width: 1920px;
+    min-height: 1080px;
+    position: absolute;
+}
+
+.bg div{
+    position: absolute;
 }
 
 .wrapper {
     text-align: center;
     justify-content: center;
     position: absolute;
-    top: 500px;
+    top: 650px;
 	bottom: 0;
 	left: 0;
-    right: 0;
-	
+	right: 0;
 	margin: auto;
 }
