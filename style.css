@@ -7,34 +7,58 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) { 
     /* styles for Retina-type displays }*/
-body{
+/* body{
     background-image: url(assets/bg.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    position: absolute;
+} */
+body{
+    justify-content: center;
+}
+#parent{
+    transform-origin: 0 0;
+    /* overflow: visible;
+    max-width: 0;
+    max-height: 0; */
+    justify-content: center;
+}
+.bg{
+    justify-content: center; 
+    min-width: 1920px;
+    min-height: 1080px;
+    position: absolute;
 }
 
-img {
-    text-align: center;
-    position: relative;
-    top: 200px;
-	bottom: 0;
-	left: 0;
-    right: 0;
+.bg div{
+    position: absolute;
+}
+
+.img{
+    position: absolute;
     width: 100px;
     height: 100px;
-    align-self: auto;
-    flex: none;
-    padding: 5px;
 }
 
 .row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: float;
     align-items: center;
+}
+
+.try-again-button, .prize-button {
+    text-align: center;
     justify-content: center;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 500px;
+    position: absolute;
+    top: 600px;
+	bottom: 0;
+	left: 730px;
+	right: 0;
+	visibility: hidden;
+	margin: auto;
+}
+
+#a0, #a1, #a2, #a3, #a4, #a5, #a6, #a7{
+    top: 0;
+    left: 0;
 }
