@@ -1,4 +1,7 @@
 # game-test
 
+## This is a simple web click-and-pair game, using simple js DOM element.
 
-## please play the protoype under 1024x768
+### The project has provided simple respovsive design depends on browser size.
+
+
